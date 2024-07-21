@@ -6,13 +6,17 @@ package Vista;
 
 import java.awt.Color;
 import javax.swing.JButton;
-import Controlador.*;
+import Controlador.Procesar_postulante;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author COSAS DE LA Y
  */
 public class Meritos extends javax.swing.JFrame {
-
+String bachillerato;
+String nombre_postulante;
     /**
      * Creates new form Meritos
      */
@@ -196,33 +200,33 @@ public class Meritos extends javax.swing.JFrame {
 
         B_G_U2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_G_U2.setText("B.G.U");
-        B_G_U2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                B_G_U2MousePressed(evt);
+        B_G_U2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B_G_U2ActionPerformed(evt);
             }
         });
 
         B_C2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_C2.setText("B.C");
-        B_C2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                B_C2MousePressed(evt);
+        B_C2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B_C2ActionPerformed(evt);
             }
         });
 
         B_T2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_T2.setText("B.T");
-        B_T2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                B_T2MousePressed(evt);
+        B_T2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B_T2ActionPerformed(evt);
             }
         });
 
         B_C_A1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_C_A1.setText("B.C.A");
-        B_C_A1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                B_C_A1MousePressed(evt);
+        B_C_A1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                B_C_A1ActionPerformed(evt);
             }
         });
 
@@ -616,27 +620,71 @@ public class Meritos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void nombre_usuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nombre_usuarioMousePressed
-         if (nombre_usuario.getText().equals("Ingrese su nombre y su apellido")) {
+        if (nombre_usuario.getText().equals("Ingrese su nombre y su apellido")) {
             nombre_usuario.setText("");
             nombre_usuario.setForeground(Color.black);
-         }
+        }
+        this.nombre_postulante= nombre_usuario.getText();
+        System.out.println(nombre_postulante);
     }//GEN-LAST:event_nombre_usuarioMousePressed
 
-    private void B_G_U2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_G_U2MousePressed
-     Procesae_usuario.Procesar_postulante("B_G_U2", B_G_U2, B_G_U2, B_C2, B_T2, B_C_A1);
-    }//GEN-LAST:event_B_G_U2MousePressed
+    private void B_G_U2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_G_U2ActionPerformed
+        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        B_G_U2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                checkboxManager.preparar_opciones(B_G_U2);
+            }
+        });
 
-    private void B_C2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_C2MousePressed
-       Procesae_usuario.Procesar_postulante("B_C2", B_C2, B_G_U2, B_C2, B_T2, B_C_A1);
-    }//GEN-LAST:event_B_C2MousePressed
+        checkboxManager.preparar_opciones(B_G_U2);
+        bachillerato = B_G_U2.getText();
+        System.out.println(bachillerato);
+    }//GEN-LAST:event_B_G_U2ActionPerformed
 
-    private void B_T2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_T2MousePressed
-      Procesae_usuario.Procesar_postulante("B_T2", B_T2, B_G_U2, B_C2, B_T2, B_C_A1);
-    }//GEN-LAST:event_B_T2MousePressed
+    private void B_C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_C2ActionPerformed
+        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        B_C2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                checkboxManager.preparar_opciones(B_C2);
+            }
+        });
 
-    private void B_C_A1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_C_A1MousePressed
-        Procesae_usuario.Procesar_postulante("B_C_A1", B_C_A1, B_G_U2, B_C2, B_T2, B_C_A1);
-    }//GEN-LAST:event_B_C_A1MousePressed
+        checkboxManager.preparar_opciones(B_C2);
+         bachillerato = B_C2.getText();
+       System.out.println(bachillerato);
+         
+    }//GEN-LAST:event_B_C2ActionPerformed
+
+    private void B_T2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_T2ActionPerformed
+        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        B_T2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                checkboxManager.preparar_opciones(B_T2);
+            }
+        });
+
+        checkboxManager.preparar_opciones(B_T2);
+        bachillerato = B_T2.getText();
+        System.out.println(bachillerato);
+
+    }//GEN-LAST:event_B_T2ActionPerformed
+
+    private void B_C_A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_C_A1ActionPerformed
+        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        B_C_A1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                checkboxManager.preparar_opciones(B_C_A1);
+            }
+        });
+
+        checkboxManager.preparar_opciones(B_C_A1);
+        bachillerato = B_C_A1.getText();
+        System.out.println(bachillerato);
+    }//GEN-LAST:event_B_C_A1ActionPerformed
 
     /**
      * @param args the command line arguments

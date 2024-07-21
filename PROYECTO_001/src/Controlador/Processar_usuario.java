@@ -11,10 +11,9 @@ import javax.swing.JTextField;
  *
  * @author COSAS DE LA Y
  */
-public class Procesae_usuario {
-    public static boolean Validar_usuario(JTextField usuario, JPasswordField contraseña) {
+public class Processar_usuario {
+    public static boolean Validar_usuario_contraseña(String usuario, String contraseña) {
       return true;
-
-    
+   
 }
 }

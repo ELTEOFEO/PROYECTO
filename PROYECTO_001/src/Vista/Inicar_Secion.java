@@ -8,7 +8,7 @@ package Vista;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
-import Controlador.Procesae_usuario;
+import Controlador.*;
 
 /**
  *
@@ -222,7 +222,9 @@ public class Inicar_Secion extends javax.swing.JFrame {
     boolean temp;
         try {
             //Estó está mal, pero no se por que T-T
-        temp = Procesae_usuario.Validar_usuario(usuario, contraseña);
+            System.out.println(user);
+            System.out.println(pasword);
+        temp = Processar_usuario.Validar_usuario_contraseña(user, pasword);
         if (temp) {
             new Meritos().setVisible(true);
         } else {

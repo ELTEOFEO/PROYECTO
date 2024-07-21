@@ -32,29 +32,59 @@ public class Meritos extends javax.swing.JFrame {
         name = new javax.swing.JLabel();
         logo1 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        mensaje_01 = new javax.swing.JLabel();
-        nombre = new javax.swing.JTextField();
-        jSeparator2 = new javax.swing.JSeparator();
-        manesaje_04 = new javax.swing.JLabel();
-        B_G_U1 = new javax.swing.JCheckBox();
-        B_C1 = new javax.swing.JCheckBox();
-        B_T1 = new javax.swing.JCheckBox();
-        B_C_A = new javax.swing.JCheckBox();
-        jSeparator3 = new javax.swing.JSeparator();
-        mensaje_02 = new javax.swing.JLabel();
-        SI_BACHILLERATO1 = new javax.swing.JCheckBox();
-        NO_BACHILLERATO1 = new javax.swing.JCheckBox();
-        mensaje_4 = new javax.swing.JLabel();
-        SI_BACHILLERATO = new javax.swing.JCheckBox();
-        NO_BACHILLERATO = new javax.swing.JCheckBox();
-        mensaje_05 = new javax.swing.JSeparator();
-        mensaje_03 = new javax.swing.JLabel();
-        mensaje_06 = new javax.swing.JLabel();
-        medicina = new javax.swing.JCheckBox();
-        medicina1 = new javax.swing.JCheckBox();
         jPanel3 = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
+        jPanel6 = new javax.swing.JPanel();
+        mensaje_2 = new javax.swing.JLabel();
+        nombre1 = new javax.swing.JTextField();
+        jSeparator6 = new javax.swing.JSeparator();
+        manesaje_5 = new javax.swing.JLabel();
+        B_G_U2 = new javax.swing.JCheckBox();
+        B_C2 = new javax.swing.JCheckBox();
+        B_T2 = new javax.swing.JCheckBox();
+        B_C_A1 = new javax.swing.JCheckBox();
+        jSeparator7 = new javax.swing.JSeparator();
+        mensaje_3 = new javax.swing.JLabel();
+        SI_BACHILLERATO2 = new javax.swing.JCheckBox();
+        NO_BACHILLERATO2 = new javax.swing.JCheckBox();
+        mensaje_5 = new javax.swing.JLabel();
+        SI_BACHILLERATO3 = new javax.swing.JCheckBox();
+        NO_BACHILLERATO3 = new javax.swing.JCheckBox();
+        mensaje_6 = new javax.swing.JSeparator();
+        mensaje_9 = new javax.swing.JLabel();
+        mensaje_10 = new javax.swing.JLabel();
+        medicina1 = new javax.swing.JCheckBox();
+        enfermeria1 = new javax.swing.JCheckBox();
+        fisioterapia1 = new javax.swing.JCheckBox();
+        dietetica1 = new javax.swing.JCheckBox();
+        jSeparator8 = new javax.swing.JSeparator();
+        mensaje_11 = new javax.swing.JLabel();
+        jSeparator9 = new javax.swing.JSeparator();
+        auditoria1 = new javax.swing.JCheckBox();
+        administracion2 = new javax.swing.JCheckBox();
+        economia1 = new javax.swing.JCheckBox();
+        finanzas1 = new javax.swing.JCheckBox();
+        gastronomia1 = new javax.swing.JCheckBox();
+        mensaje_12 = new javax.swing.JLabel();
+        jSeparator10 = new javax.swing.JSeparator();
+        agropeciaria1 = new javax.swing.JCheckBox();
+        alimentos = new javax.swing.JCheckBox();
+        ambiental = new javax.swing.JCheckBox();
+        industrial = new javax.swing.JCheckBox();
+        ing_quimica = new javax.swing.JCheckBox();
+        biologia3 = new javax.swing.JCheckBox();
+        escenicas = new javax.swing.JCheckBox();
+        mensaje_13 = new javax.swing.JLabel();
+        jSeparator11 = new javax.swing.JSeparator();
+        bio_farmacia1 = new javax.swing.JCheckBox();
+        visuales = new javax.swing.JCheckBox();
+        idiomas = new javax.swing.JCheckBox();
+        psicopedadogia = new javax.swing.JCheckBox();
+        psicologia1 = new javax.swing.JCheckBox();
+        psicologia_clinica = new javax.swing.JCheckBox();
+        mensaje_14 = new javax.swing.JLabel();
+        jSeparator12 = new javax.swing.JSeparator();
+        derecho = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,160 +141,6 @@ public class Meritos extends javax.swing.JFrame {
         jLabel8.setText("jLabel8");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 40, 400, 730));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-
-        mensaje_01.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 24)); // NOI18N
-        mensaje_01.setText("Proceso de inscripcion ");
-
-        nombre.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        nombre.setForeground(new java.awt.Color(153, 153, 153));
-        nombre.setText("Ingrese su nombre y su apellido");
-
-        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
-
-        manesaje_04.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
-        manesaje_04.setText("Que tipo debachillearto tiene usted? (Están con sus respectivas siglas)");
-
-        B_G_U1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        B_G_U1.setText("B.G.U");
-
-        B_C1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        B_C1.setText("B.C");
-
-        B_T1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        B_T1.setText("B.T");
-
-        B_C_A.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        B_C_A.setText("B.C.A");
-
-        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-
-        mensaje_02.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
-        mensaje_02.setText("Es usted abanderado de su colegio?");
-
-        SI_BACHILLERATO1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        SI_BACHILLERATO1.setText("SI");
-
-        NO_BACHILLERATO1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        NO_BACHILLERATO1.setText("NO");
-
-        mensaje_4.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
-        mensaje_4.setText("Usted posee una discapacidad mayor al 35%?");
-
-        SI_BACHILLERATO.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        SI_BACHILLERATO.setText("SI");
-
-        NO_BACHILLERATO.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        NO_BACHILLERATO.setText("NO");
-
-        mensaje_05.setForeground(new java.awt.Color(0, 0, 0));
-
-        mensaje_03.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
-        mensaje_03.setText("A que carrera desea ingreasar?");
-
-        mensaje_06.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        mensaje_06.setText("Facultad de ciencias de la salud");
-
-        medicina.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        medicina.setText("Medicina");
-
-        medicina1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
-        medicina1.setText("Medicina");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(mensaje_01, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(manesaje_04)
-                            .addComponent(mensaje_4)
-                            .addComponent(mensaje_05, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mensaje_03)
-                            .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 524, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mensaje_02)
-                            .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(199, 199, 199)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(B_C1)
-                            .addComponent(B_G_U1)
-                            .addComponent(B_T1)
-                            .addComponent(B_C_A)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(171, 171, 171)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NO_BACHILLERATO1)
-                            .addComponent(SI_BACHILLERATO1)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(173, 173, 173)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NO_BACHILLERATO)
-                            .addComponent(SI_BACHILLERATO)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addComponent(mensaje_06))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(233, 233, 233)
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(medicina1)
-                            .addComponent(medicina))))
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(mensaje_01, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(manesaje_04)
-                .addGap(18, 18, 18)
-                .addComponent(B_G_U1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(B_C1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(B_T1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(B_C_A)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(mensaje_02)
-                .addGap(18, 18, 18)
-                .addComponent(SI_BACHILLERATO1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(NO_BACHILLERATO1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mensaje_4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(SI_BACHILLERATO)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(NO_BACHILLERATO)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(mensaje_05, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(mensaje_03)
-                .addGap(18, 18, 18)
-                .addComponent(mensaje_06)
-                .addGap(18, 18, 18)
-                .addComponent(medicina)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(medicina1)
-                .addGap(0, 255, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 670, 930));
-
         jPanel3.setBackground(new java.awt.Color(0, 66, 109));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EXTRAS/LOGO MEJORADO.png"))); // NOI18N
@@ -288,6 +164,354 @@ public class Meritos extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 720, 460, 50));
 
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
+
+        mensaje_2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 24)); // NOI18N
+        mensaje_2.setText("Proceso de inscripcion ");
+
+        nombre1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        nombre1.setForeground(new java.awt.Color(153, 153, 153));
+        nombre1.setText("Ingrese su nombre y su apellido");
+
+        jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
+
+        manesaje_5.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
+        manesaje_5.setText("Que tipo debachillearto tiene usted? (Están con sus respectivas siglas)");
+
+        B_G_U2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        B_G_U2.setText("B.G.U");
+
+        B_C2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        B_C2.setText("B.C");
+
+        B_T2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        B_T2.setText("B.T");
+
+        B_C_A1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        B_C_A1.setText("B.C.A");
+
+        jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
+
+        mensaje_3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
+        mensaje_3.setText("Es usted abanderado de su colegio?");
+
+        SI_BACHILLERATO2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        SI_BACHILLERATO2.setText("SI");
+
+        NO_BACHILLERATO2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        NO_BACHILLERATO2.setText("NO");
+
+        mensaje_5.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
+        mensaje_5.setText("Usted posee una discapacidad mayor al 35%?");
+
+        SI_BACHILLERATO3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        SI_BACHILLERATO3.setText("SI");
+
+        NO_BACHILLERATO3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        NO_BACHILLERATO3.setText("NO");
+
+        mensaje_6.setForeground(new java.awt.Color(0, 0, 0));
+
+        mensaje_9.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
+        mensaje_9.setText("A que carrera desea ingreasar?");
+
+        mensaje_10.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_10.setText("Facultad de ciencias economicas y empresariales");
+
+        medicina1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        medicina1.setText("Medicina");
+
+        enfermeria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        enfermeria1.setText("Enfermeria");
+
+        fisioterapia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        fisioterapia1.setText("Fisioterapia");
+
+        dietetica1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        dietetica1.setText("Nutricion y dietetica");
+
+        jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
+
+        mensaje_11.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_11.setText("Facultad de ciencias de la salud");
+
+        jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
+
+        auditoria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        auditoria1.setText("Contabilidad y auditoria");
+
+        administracion2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        administracion2.setText("Administracion de empresas");
+
+        economia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        economia1.setText("Economia");
+
+        finanzas1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        finanzas1.setText("Finanzas");
+
+        gastronomia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        gastronomia1.setText("Gastronomia");
+
+        mensaje_12.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_12.setText("Facultad de ciencias exactas y naturales");
+
+        jSeparator10.setForeground(new java.awt.Color(0, 0, 0));
+
+        agropeciaria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        agropeciaria1.setText("Agropecuaria");
+
+        alimentos.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        alimentos.setText("Alimentos");
+
+        ambiental.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        ambiental.setText("Inguienieria ambiental");
+
+        industrial.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        industrial.setText("Inguienieria Industrial");
+
+        ing_quimica.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        ing_quimica.setText("Inguienieria quimica");
+
+        biologia3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        biologia3.setText("Biologia");
+
+        escenicas.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        escenicas.setText("Artes escenicas");
+
+        mensaje_13.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_13.setText("Facultad de ciencias sociales, eduaccion y humanidades");
+
+        jSeparator11.setForeground(new java.awt.Color(0, 0, 0));
+
+        bio_farmacia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        bio_farmacia1.setText("Bioquimica y farmacia");
+
+        visuales.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        visuales.setText("Artes visuales");
+
+        idiomas.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        idiomas.setText("Pedadofia de los idiomas nacionales y extranjeros");
+
+        psicopedadogia.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        psicopedadogia.setText("Psicopedadogia");
+
+        psicologia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        psicologia1.setText("Psicologia");
+
+        psicologia_clinica.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        psicologia_clinica.setText("Psicologia clinica");
+
+        mensaje_14.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_14.setText("Ciencias juridicas y politicas");
+
+        jSeparator12.setForeground(new java.awt.Color(0, 0, 0));
+
+        derecho.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        derecho.setText("Derecho");
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(finanzas1)
+                    .addComponent(administracion2)
+                    .addComponent(auditoria1)
+                    .addComponent(economia1)
+                    .addComponent(gastronomia1))
+                .addGap(256, 256, 256))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(235, 235, 235)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(alimentos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(agropeciaria1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(303, 303, 303))
+                    .addComponent(ambiental, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(industrial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(ing_quimica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(biologia3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(bio_farmacia1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addGap(178, 178, 178))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(manesaje_5)
+                            .addComponent(mensaje_5)
+                            .addComponent(mensaje_6, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mensaje_9)
+                            .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 524, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mensaje_3)
+                            .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(171, 171, 171)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(NO_BACHILLERATO2)
+                            .addComponent(SI_BACHILLERATO2)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(173, 173, 173)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(NO_BACHILLERATO3)
+                            .addComponent(SI_BACHILLERATO3)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(233, 233, 233)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(enfermeria1)
+                            .addComponent(medicina1)
+                            .addComponent(fisioterapia1)
+                            .addComponent(dietetica1)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(175, 175, 175)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(B_T2)
+                            .addComponent(B_C_A1)
+                            .addComponent(B_C2)
+                            .addComponent(B_G_U2)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(167, 167, 167)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mensaje_10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(mensaje_11)
+                            .addComponent(mensaje_12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mensaje_13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jSeparator11)
+                            .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mensaje_14, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createSequentialGroup()
+                                .addGap(71, 71, 71)
+                                .addComponent(derecho))))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(237, 237, 237)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(psicologia_clinica)
+                            .addComponent(psicologia1)
+                            .addComponent(psicopedadogia)
+                            .addComponent(visuales, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(escenicas, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(idiomas))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(manesaje_5)
+                .addGap(18, 18, 18)
+                .addComponent(B_G_U2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(B_C2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(B_T2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(B_C_A1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jSeparator7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(mensaje_3)
+                .addGap(18, 18, 18)
+                .addComponent(SI_BACHILLERATO2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(NO_BACHILLERATO2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(mensaje_5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(SI_BACHILLERATO3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(NO_BACHILLERATO3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(mensaje_6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(mensaje_9)
+                .addGap(22, 22, 22)
+                .addComponent(mensaje_11)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(medicina1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(enfermeria1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fisioterapia1)
+                .addGap(12, 12, 12)
+                .addComponent(dietetica1)
+                .addGap(18, 18, 18)
+                .addComponent(mensaje_10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(administracion2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(auditoria1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(economia1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(finanzas1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(gastronomia1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(mensaje_12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(agropeciaria1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(alimentos)
+                .addGap(2, 2, 2)
+                .addComponent(biologia3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ambiental)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(industrial)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(ing_quimica)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(bio_farmacia1)
+                .addGap(12, 12, 12)
+                .addComponent(mensaje_13)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(escenicas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(visuales)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(idiomas)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(psicologia1)
+                .addGap(8, 8, 8)
+                .addComponent(psicopedadogia)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(psicologia_clinica)
+                .addGap(18, 18, 18)
+                .addComponent(mensaje_14)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(derecho)
+                .addGap(0, 315, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -301,8 +525,8 @@ public class Meritos extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1033, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1826, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -344,34 +568,64 @@ public class Meritos extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBox B_C1;
-    private javax.swing.JCheckBox B_C_A;
-    private javax.swing.JCheckBox B_G_U1;
-    private javax.swing.JCheckBox B_T1;
-    private javax.swing.JCheckBox NO_BACHILLERATO;
-    private javax.swing.JCheckBox NO_BACHILLERATO1;
-    private javax.swing.JCheckBox SI_BACHILLERATO;
-    private javax.swing.JCheckBox SI_BACHILLERATO1;
+    private javax.swing.JCheckBox B_C2;
+    private javax.swing.JCheckBox B_C_A1;
+    private javax.swing.JCheckBox B_G_U2;
+    private javax.swing.JCheckBox B_T2;
+    private javax.swing.JCheckBox NO_BACHILLERATO2;
+    private javax.swing.JCheckBox NO_BACHILLERATO3;
+    private javax.swing.JCheckBox SI_BACHILLERATO2;
+    private javax.swing.JCheckBox SI_BACHILLERATO3;
+    private javax.swing.JCheckBox administracion2;
+    private javax.swing.JCheckBox agropeciaria1;
+    private javax.swing.JCheckBox alimentos;
+    private javax.swing.JCheckBox ambiental;
+    private javax.swing.JCheckBox auditoria1;
+    private javax.swing.JCheckBox bio_farmacia1;
+    private javax.swing.JCheckBox biologia3;
+    private javax.swing.JCheckBox derecho;
+    private javax.swing.JCheckBox dietetica1;
+    private javax.swing.JCheckBox economia1;
+    private javax.swing.JCheckBox enfermeria1;
+    private javax.swing.JCheckBox escenicas;
+    private javax.swing.JCheckBox finanzas1;
+    private javax.swing.JCheckBox fisioterapia1;
+    private javax.swing.JCheckBox gastronomia1;
+    private javax.swing.JCheckBox idiomas;
+    private javax.swing.JCheckBox industrial;
+    private javax.swing.JCheckBox ing_quimica;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator11;
+    private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator6;
+    private javax.swing.JSeparator jSeparator7;
+    private javax.swing.JSeparator jSeparator8;
+    private javax.swing.JSeparator jSeparator9;
     private javax.swing.JLabel logo;
     private javax.swing.JLabel logo1;
-    private javax.swing.JLabel manesaje_04;
-    private javax.swing.JCheckBox medicina;
+    private javax.swing.JLabel manesaje_5;
     private javax.swing.JCheckBox medicina1;
-    private javax.swing.JLabel mensaje_01;
-    private javax.swing.JLabel mensaje_02;
-    private javax.swing.JLabel mensaje_03;
-    private javax.swing.JSeparator mensaje_05;
-    private javax.swing.JLabel mensaje_06;
-    private javax.swing.JLabel mensaje_4;
+    private javax.swing.JLabel mensaje_10;
+    private javax.swing.JLabel mensaje_11;
+    private javax.swing.JLabel mensaje_12;
+    private javax.swing.JLabel mensaje_13;
+    private javax.swing.JLabel mensaje_14;
+    private javax.swing.JLabel mensaje_2;
+    private javax.swing.JLabel mensaje_3;
+    private javax.swing.JLabel mensaje_5;
+    private javax.swing.JSeparator mensaje_6;
+    private javax.swing.JLabel mensaje_9;
     private javax.swing.JLabel name;
-    private javax.swing.JTextField nombre;
+    private javax.swing.JTextField nombre1;
+    private javax.swing.JCheckBox psicologia1;
+    private javax.swing.JCheckBox psicologia_clinica;
+    private javax.swing.JCheckBox psicopedadogia;
+    private javax.swing.JCheckBox visuales;
     // End of variables declaration//GEN-END:variables
 }

@@ -134,19 +134,6 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel8">
-          <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/EXTRAS/fondo2.0.1.png"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="jLabel8"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="960" y="40" width="400" height="730"/>
-            </Constraint>
-          </Constraints>
-        </Component>
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -155,7 +142,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="890" y="720" width="460" height="50"/>
+              <AbsoluteConstraints x="960" y="640" width="390" height="50"/>
             </Constraint>
           </Constraints>
 
@@ -163,17 +150,17 @@
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="logo" min="-2" pref="106" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="354" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="logo" min="-2" pref="89" max="-2" attributes="0"/>
+                      <EmptySpace pref="295" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="5" max="32767" attributes="0"/>
                       <Component id="logo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -189,641 +176,761 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="jPanel6">
+        <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/EXTRAS/fondo2.0.1.png"/>
             </Property>
+            <Property name="text" type="java.lang.String" value="jLabel8"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="100" width="-1" height="-1"/>
+              <AbsoluteConstraints x="960" y="90" width="400" height="640"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="0" y="100" width="960" height="1600"/>
             </Constraint>
           </Constraints>
 
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="finanzas1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="administracion2" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="auditoria1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="economia1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="gastronomia1" alignment="0" min="-2" max="-2" attributes="0"/>
+          <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="jPanel6">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <Component id="alimentos" min="-2" pref="99" max="-2" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="agropeciaria1" pref="127" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="481" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="ing_quimica" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="bio_farmacia1" alignment="0" pref="168" max="32767" attributes="0"/>
+                                      <Component id="biologia3" alignment="0" min="-2" pref="99" max="-2" attributes="0"/>
+                                      <Component id="ambiental" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="industrial" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="256" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="alimentos" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="agropeciaria1" max="32767" attributes="0"/>
-                              <EmptySpace min="303" pref="303" max="-2" attributes="0"/>
-                          </Group>
-                          <Component id="ambiental" alignment="0" max="32767" attributes="0"/>
-                          <Component id="industrial" alignment="0" max="32767" attributes="0"/>
-                          <Component id="ing_quimica" alignment="0" max="32767" attributes="0"/>
-                          <Component id="biologia3" alignment="0" max="32767" attributes="0"/>
-                          <Group type="102" attributes="0">
-                              <Component id="bio_farmacia1" min="-2" pref="168" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="178" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="mensaje_2" min="-2" pref="280" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="nombre1" alignment="0" min="-2" pref="340" max="-2" attributes="0"/>
-                                  <Component id="manesaje_5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="mensaje_5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="mensaje_6" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
-                                  <Component id="mensaje_9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jSeparator6" alignment="0" min="-2" pref="524" max="-2" attributes="0"/>
-                                  <Component id="mensaje_3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jSeparator7" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="nombre_usuario" alignment="0" min="-2" pref="340" max="-2" attributes="0"/>
+                                      <Component id="manesaje_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="mensaje_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="mensaje_6" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
+                                      <Component id="mensaje_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jSeparator6" alignment="0" min="-2" pref="524" max="-2" attributes="0"/>
+                                      <Component id="mensaje_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jSeparator7" alignment="0" min="-2" pref="530" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="NO_BACHILLERATO2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="SI_BACHILLERATO2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="171" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="NO_BACHILLERATO2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SI_BACHILLERATO2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="NO_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="SI_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="NO_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="SI_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="enfermeria1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="medicina1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="fisioterapia1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="dietetica1" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="233" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="enfermeria1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="medicina1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="fisioterapia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="dietetica1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="B_T2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="B_C_A1" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="B_C2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="B_G_U2" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="175" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="B_T2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="B_C_A1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="B_C2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="B_G_U2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jSeparator8" alignment="0" min="-2" pref="217" max="-2" attributes="0"/>
-                                  <Component id="mensaje_10" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="mensaje_11" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="mensaje_12" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jSeparator10" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
-                                  <Component id="mensaje_13" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jSeparator11" max="32767" attributes="0"/>
-                                  <Component id="jSeparator9" alignment="0" min="-2" pref="322" max="-2" attributes="0"/>
-                                  <Component id="jSeparator12" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
-                                  <Component id="mensaje_14" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
-                                      <Component id="derecho" min="-2" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="psicologia_clinica" min="-2" max="-2" attributes="0"/>
+                                      <Component id="psicologia1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="psicopedadogia" min="-2" max="-2" attributes="0"/>
+                                      <Component id="visuales" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="escenicas" min="-2" pref="168" max="-2" attributes="0"/>
+                                      <Component id="idiomas" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="231" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="auditoria1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="administracion2" min="-2" max="-2" attributes="0"/>
+                                      <Component id="economia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="finanzas1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="gastronomia1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="mensaje_14" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Component id="jSeparator8" alignment="0" min="-2" pref="217" max="-2" attributes="0"/>
+                                          <Component id="mensaje_10" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="mensaje_11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="mensaje_12" alignment="1" max="32767" attributes="0"/>
+                                          <Component id="jSeparator10" alignment="0" min="-2" pref="265" max="-2" attributes="0"/>
+                                          <Component id="mensaje_13" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="jSeparator11" max="32767" attributes="0"/>
+                                          <Component id="jSeparator9" alignment="0" min="-2" pref="322" max="-2" attributes="0"/>
+                                          <Component id="jSeparator12" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="mensaje_15" alignment="0" min="-2" pref="190" max="-2" attributes="0"/>
+                                      <Component id="jSeparator13" alignment="0" min="-2" pref="182" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="237" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="psicologia_clinica" min="-2" max="-2" attributes="0"/>
-                                  <Component id="psicologia1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="psicopedadogia" min="-2" max="-2" attributes="0"/>
-                                  <Component id="visuales" min="-2" pref="168" max="-2" attributes="0"/>
-                                  <Component id="escenicas" min="-2" pref="168" max="-2" attributes="0"/>
-                                  <Component id="idiomas" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="236" max="-2" attributes="0"/>
+                                  <Component id="derecho" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="228" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="computacion1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="geologia" min="-2" max="-2" attributes="0"/>
+                                      <Component id="arquitectura" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="telecomunicaciones1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="civil" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="mensaje_2" alignment="0" min="-2" pref="280" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="mensaje_2" min="-2" pref="90" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="nombre1" min="-2" pref="40" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jSeparator6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="manesaje_5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="B_G_U2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="B_C2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="B_T2" min="-2" pref="20" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="B_C_A1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jSeparator7" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="mensaje_3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="SI_BACHILLERATO2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="NO_BACHILLERATO2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="mensaje_5" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="SI_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="NO_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="mensaje_6" min="-2" pref="10" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="mensaje_9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                      <Component id="mensaje_11" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator8" min="-2" pref="10" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="medicina1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="enfermeria1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="fisioterapia1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="dietetica1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="mensaje_10" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator9" min="-2" pref="9" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="administracion2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="auditoria1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="economia1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="finanzas1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="gastronomia1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="mensaje_12" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator10" min="-2" pref="12" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="agropeciaria1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="alimentos" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
-                      <Component id="biologia3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ambiental" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="industrial" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="ing_quimica" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="bio_farmacia1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                      <Component id="mensaje_13" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator11" min="-2" pref="12" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="escenicas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="visuales" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="idiomas" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="psicologia1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
-                      <Component id="psicopedadogia" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="psicologia_clinica" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="mensaje_14" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jSeparator12" min="-2" pref="12" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="derecho" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="315" max="32767" attributes="0"/>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="mensaje_2" min="-2" pref="96" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="nombre_usuario" min="-2" pref="40" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jSeparator6" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="manesaje_5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="B_G_U2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B_C2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B_T2" min="-2" pref="20" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B_C_A1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="jSeparator7" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="mensaje_3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="SI_BACHILLERATO2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="NO_BACHILLERATO2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="mensaje_5" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="SI_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="NO_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="mensaje_6" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="mensaje_9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="mensaje_11" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator8" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="medicina1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="enfermeria1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="fisioterapia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="dietetica1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="mensaje_10" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator9" min="-2" pref="9" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="administracion2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="auditoria1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="economia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="finanzas1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="gastronomia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="mensaje_12" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator10" min="-2" pref="12" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="agropeciaria1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="alimentos" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="biologia3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="ambiental" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="industrial" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="ing_quimica" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Component id="bio_farmacia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="mensaje_13" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator11" min="-2" pref="12" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="escenicas" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="visuales" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="idiomas" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="psicologia1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="psicopedadogia" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="psicologia_clinica" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="mensaje_14" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator12" min="-2" pref="12" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="derecho" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="mensaje_15" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator13" min="-2" pref="12" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="computacion1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="geologia" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="telecomunicaciones1" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="arquitectura" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="civil" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="169" max="32767" attributes="0"/>
+                      </Group>
                   </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="mensaje_2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="24" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Proceso de inscripcion "/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="nombre1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="99" green="99" red="99" type="rgb"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Ingrese su nombre y su apellido"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator6">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="manesaje_5">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Que tipo debachillearto tiene usted? (Est&#xe1;n con sus respectivas siglas)"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="B_G_U2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="B.G.U"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="B_C2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="B.C"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="B_T2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="B.T"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="B_C_A1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="B.C.A"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator7">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_3">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Es usted abanderado de su colegio?"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="SI_BACHILLERATO2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="SI"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="NO"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_5">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Usted posee una discapacidad mayor al 35%?"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="SI_BACHILLERATO3">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="SI"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO3">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="NO"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="mensaje_6">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_9">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="18" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="A que carrera desea ingreasar?"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_10">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Facultad de ciencias economicas y empresariales"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="medicina1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Medicina"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="enfermeria1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Enfermeria"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="fisioterapia1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Fisioterapia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="dietetica1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Nutricion y dietetica"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator8">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_11">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Facultad de ciencias de la salud"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator9">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="auditoria1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Contabilidad y auditoria"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="administracion2">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Administracion de empresas"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="economia1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Economia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="finanzas1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Finanzas"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="gastronomia1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Gastronomia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_12">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Facultad de ciencias exactas y naturales"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator10">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="agropeciaria1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Agropecuaria"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="alimentos">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Alimentos"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="ambiental">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Inguienieria ambiental"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="industrial">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Inguienieria Industrial"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="ing_quimica">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Inguienieria quimica"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="biologia3">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Biologia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="escenicas">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Artes escenicas"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_13">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Facultad de ciencias sociales, eduaccion y humanidades"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator11">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="bio_farmacia1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Bioquimica y farmacia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="visuales">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Artes visuales"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="idiomas">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Pedadofia de los idiomas nacionales y extranjeros"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="psicopedadogia">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Psicopedadogia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="psicologia1">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Psicologia"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="psicologia_clinica">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Psicologia clinica"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="mensaje_14">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="14" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Ciencias juridicas y politicas"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JSeparator" name="jSeparator12">
-              <Properties>
-                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="0" red="0" type="rgb"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JCheckBox" name="derecho">
-              <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Franklin Gothic Heavy" size="12" style="0"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Derecho"/>
-              </Properties>
-            </Component>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="mensaje_2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="24" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Proceso de inscripcion "/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="nombre_usuario">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="99" green="99" red="99" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Ingrese su nombre y su apellido"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="nombre_usuarioMousePressed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator6">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="manesaje_5">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Que tipo debachillearto tiene usted? (Est&#xe1;n con sus respectivas siglas)"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="B_G_U2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="B.G.U"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="B_G_U2MousePressed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="B_C2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="B.C"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="B_C2MousePressed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="B_T2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="B.T"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="B_T2MousePressed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="B_C_A1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="B.C.A"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="B_C_A1MousePressed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator7">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_3">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Es usted abanderado de su colegio?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="SI_BACHILLERATO2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="SI"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="NO"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_5">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Usted posee una discapacidad mayor al 35%?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="SI_BACHILLERATO3">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="SI"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO3">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="NO"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="mensaje_6">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_9">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="18" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="A que carrera desea ingreasar?"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_10">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Facultad de ciencias economicas y empresariales"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="medicina1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Medicina"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="enfermeria1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Enfermeria"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="fisioterapia1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Fisioterapia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="dietetica1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Nutricion y dietetica"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator8">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_11">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Facultad de ciencias de la salud"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator9">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="auditoria1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Contabilidad y auditoria"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="administracion2">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Administracion de empresas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="economia1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Economia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="finanzas1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Finanzas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="gastronomia1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Gastronomia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_12">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Facultad de ciencias exactas y naturales"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator10">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="agropeciaria1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Agropecuaria"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="alimentos">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Alimentos"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ambiental">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inguienieria ambiental"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="industrial">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inguienieria Industrial"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="ing_quimica">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inguienieria quimica"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="biologia3">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Biologia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="escenicas">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Artes escenicas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_13">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Facultad de ciencias sociales, eduaccion y humanidades"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator11">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="bio_farmacia1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Bioquimica y farmacia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="visuales">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Artes visuales"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="idiomas">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Pedadofia de los idiomas nacionales y extranjeros"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="psicopedadogia">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Psicopedadogia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="psicologia1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Psicologia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="psicologia_clinica">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Psicologia clinica"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_14">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Ciencias juridicas y politicas"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator12">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="derecho">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Derecho"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="mensaje_15">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="14" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inguienieria y arquitectura"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator13">
+                  <Properties>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="geologia">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Geologia"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="computacion1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Computacion"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="arquitectura">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Arquitectura"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="telecomunicaciones1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Telecomunicaciones"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JCheckBox" name="civil">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Franklin Gothic Heavy" size="12" style="0"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Inguienieria civil"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
           </SubComponents>
         </Container>
       </SubComponents>

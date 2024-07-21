@@ -4,6 +4,9 @@
  */
 package Vista;
 
+import java.awt.Color;
+import javax.swing.JButton;
+import Controlador.*;
 /**
  *
  * @author COSAS DE LA Y
@@ -31,12 +34,13 @@ public class Meritos extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         name = new javax.swing.JLabel();
         logo1 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
         jPanel6 = new javax.swing.JPanel();
         mensaje_2 = new javax.swing.JLabel();
-        nombre1 = new javax.swing.JTextField();
+        nombre_usuario = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
         manesaje_5 = new javax.swing.JLabel();
         B_G_U2 = new javax.swing.JCheckBox();
@@ -85,6 +89,13 @@ public class Meritos extends javax.swing.JFrame {
         mensaje_14 = new javax.swing.JLabel();
         jSeparator12 = new javax.swing.JSeparator();
         derecho = new javax.swing.JCheckBox();
+        mensaje_15 = new javax.swing.JLabel();
+        jSeparator13 = new javax.swing.JSeparator();
+        geologia = new javax.swing.JCheckBox();
+        computacion1 = new javax.swing.JCheckBox();
+        arquitectura = new javax.swing.JCheckBox();
+        telecomunicaciones1 = new javax.swing.JCheckBox();
+        civil = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -137,10 +148,6 @@ public class Meritos extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 1360, -1));
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EXTRAS/fondo2.0.1.png"))); // NOI18N
-        jLabel8.setText("jLabel8");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 40, 400, 730));
-
         jPanel3.setBackground(new java.awt.Color(0, 66, 109));
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EXTRAS/LOGO MEJORADO.png"))); // NOI18N
@@ -151,27 +158,36 @@ public class Meritos extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 354, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(295, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(logo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGap(0, 5, Short.MAX_VALUE)
+                .addComponent(logo))
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 720, 460, 50));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 640, 390, 50));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EXTRAS/fondo2.0.1.png"))); // NOI18N
+        jLabel8.setText("jLabel8");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 90, 400, 640));
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
 
         mensaje_2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 24)); // NOI18N
         mensaje_2.setText("Proceso de inscripcion ");
 
-        nombre1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        nombre1.setForeground(new java.awt.Color(153, 153, 153));
-        nombre1.setText("Ingrese su nombre y su apellido");
+        nombre_usuario.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        nombre_usuario.setForeground(new java.awt.Color(153, 153, 153));
+        nombre_usuario.setText("Ingrese su nombre y su apellido");
+        nombre_usuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                nombre_usuarioMousePressed(evt);
+            }
+        });
 
         jSeparator6.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -180,15 +196,35 @@ public class Meritos extends javax.swing.JFrame {
 
         B_G_U2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_G_U2.setText("B.G.U");
+        B_G_U2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                B_G_U2MousePressed(evt);
+            }
+        });
 
         B_C2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_C2.setText("B.C");
+        B_C2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                B_C2MousePressed(evt);
+            }
+        });
 
         B_T2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_T2.setText("B.T");
+        B_T2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                B_T2MousePressed(evt);
+            }
+        });
 
         B_C_A1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         B_C_A1.setText("B.C.A");
+        B_C_A1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                B_C_A1MousePressed(evt);
+            }
+        });
 
         jSeparator7.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -309,43 +345,52 @@ public class Meritos extends javax.swing.JFrame {
         derecho.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         derecho.setText("Derecho");
 
+        mensaje_15.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        mensaje_15.setText("Inguienieria y arquitectura");
+
+        jSeparator13.setForeground(new java.awt.Color(0, 0, 0));
+
+        geologia.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        geologia.setText("Geologia");
+
+        computacion1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        computacion1.setText("Computacion");
+
+        arquitectura.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        arquitectura.setText("Arquitectura");
+
+        telecomunicaciones1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        telecomunicaciones1.setText("Telecomunicaciones");
+
+        civil.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
+        civil.setText("Inguienieria civil");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel6Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(finanzas1)
-                    .addComponent(administracion2)
-                    .addComponent(auditoria1)
-                    .addComponent(economia1)
-                    .addComponent(gastronomia1))
-                .addGap(256, 256, 256))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGap(235, 235, 235)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(alimentos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(agropeciaria1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(303, 303, 303))
-                    .addComponent(ambiental, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(industrial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(ing_quimica, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(biologia3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(alimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(agropeciaria1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                        .addGap(481, 481, 481))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addComponent(bio_farmacia1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(178, 178, 178))
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(ing_quimica, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(bio_farmacia1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 168, Short.MAX_VALUE)
+                            .addComponent(biologia3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ambiental, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(industrial, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(20, 20, 20)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 340, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(manesaje_5)
                             .addComponent(mensaje_5)
                             .addComponent(mensaje_6, javax.swing.GroupLayout.PREFERRED_SIZE, 530, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -378,22 +423,6 @@ public class Meritos extends javax.swing.JFrame {
                             .addComponent(B_C2)
                             .addComponent(B_G_U2)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(167, 167, 167)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mensaje_10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(mensaje_11)
-                            .addComponent(mensaje_12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mensaje_13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jSeparator11)
-                            .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(mensaje_14, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel6Layout.createSequentialGroup()
-                                .addGap(71, 71, 71)
-                                .addComponent(derecho))))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(237, 237, 237)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(psicologia_clinica)
@@ -401,16 +430,54 @@ public class Meritos extends javax.swing.JFrame {
                             .addComponent(psicopedadogia)
                             .addComponent(visuales, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(escenicas, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(idiomas))))
+                            .addComponent(idiomas)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(231, 231, 231)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(auditoria1)
+                            .addComponent(administracion2)
+                            .addComponent(economia1)
+                            .addComponent(finanzas1)
+                            .addComponent(gastronomia1)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(167, 167, 167)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(mensaje_14, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(jSeparator8, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(mensaje_10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(mensaje_11)
+                                .addComponent(mensaje_12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(mensaje_13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jSeparator11)
+                                .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(mensaje_15, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(236, 236, 236)
+                        .addComponent(derecho))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(228, 228, 228)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(computacion1)
+                            .addComponent(geologia)
+                            .addComponent(arquitectura)
+                            .addComponent(telecomunicaciones1)
+                            .addComponent(civil)))
+                    .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(nombre_usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -433,7 +500,7 @@ public class Meritos extends javax.swing.JFrame {
                 .addComponent(NO_BACHILLERATO2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mensaje_5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(SI_BACHILLERATO3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(NO_BACHILLERATO3)
@@ -459,7 +526,7 @@ public class Meritos extends javax.swing.JFrame {
                 .addComponent(jSeparator9, javax.swing.GroupLayout.PREFERRED_SIZE, 9, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(administracion2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(auditoria1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(economia1)
@@ -472,10 +539,10 @@ public class Meritos extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator10, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(agropeciaria1)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(agropeciaria1)
+                    .addComponent(alimentos))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(alimentos)
-                .addGap(2, 2, 2)
                 .addComponent(biologia3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ambiental)
@@ -483,9 +550,9 @@ public class Meritos extends javax.swing.JFrame {
                 .addComponent(industrial)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ing_quimica)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(bio_farmacia1)
-                .addGap(12, 12, 12)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mensaje_13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator11, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -497,7 +564,7 @@ public class Meritos extends javax.swing.JFrame {
                 .addComponent(idiomas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(psicologia1)
-                .addGap(8, 8, 8)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(psicopedadogia)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(psicologia_clinica)
@@ -507,10 +574,26 @@ public class Meritos extends javax.swing.JFrame {
                 .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(derecho)
-                .addGap(0, 315, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(mensaje_15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jSeparator13, javax.swing.GroupLayout.PREFERRED_SIZE, 12, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(computacion1)
+                .addGap(10, 10, 10)
+                .addComponent(geologia)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(telecomunicaciones1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(arquitectura)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(civil)
+                .addGap(0, 169, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, -1, -1));
+        jScrollPane1.setViewportView(jPanel6);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 960, 1600));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -531,6 +614,29 @@ public class Meritos extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void nombre_usuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nombre_usuarioMousePressed
+         if (nombre_usuario.getText().equals("Ingrese su nombre y su apellido")) {
+            nombre_usuario.setText("");
+            nombre_usuario.setForeground(Color.black);
+         }
+    }//GEN-LAST:event_nombre_usuarioMousePressed
+
+    private void B_G_U2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_G_U2MousePressed
+     Procesae_usuario.Procesar_postulante("B_G_U2", B_G_U2, B_G_U2, B_C2, B_T2, B_C_A1);
+    }//GEN-LAST:event_B_G_U2MousePressed
+
+    private void B_C2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_C2MousePressed
+       Procesae_usuario.Procesar_postulante("B_C2", B_C2, B_G_U2, B_C2, B_T2, B_C_A1);
+    }//GEN-LAST:event_B_C2MousePressed
+
+    private void B_T2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_T2MousePressed
+      Procesae_usuario.Procesar_postulante("B_T2", B_T2, B_G_U2, B_C2, B_T2, B_C_A1);
+    }//GEN-LAST:event_B_T2MousePressed
+
+    private void B_C_A1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_B_C_A1MousePressed
+        Procesae_usuario.Procesar_postulante("B_C_A1", B_C_A1, B_G_U2, B_C2, B_T2, B_C_A1);
+    }//GEN-LAST:event_B_C_A1MousePressed
 
     /**
      * @param args the command line arguments
@@ -580,9 +686,12 @@ public class Meritos extends javax.swing.JFrame {
     private javax.swing.JCheckBox agropeciaria1;
     private javax.swing.JCheckBox alimentos;
     private javax.swing.JCheckBox ambiental;
+    private javax.swing.JCheckBox arquitectura;
     private javax.swing.JCheckBox auditoria1;
     private javax.swing.JCheckBox bio_farmacia1;
     private javax.swing.JCheckBox biologia3;
+    private javax.swing.JCheckBox civil;
+    private javax.swing.JCheckBox computacion1;
     private javax.swing.JCheckBox derecho;
     private javax.swing.JCheckBox dietetica1;
     private javax.swing.JCheckBox economia1;
@@ -591,6 +700,7 @@ public class Meritos extends javax.swing.JFrame {
     private javax.swing.JCheckBox finanzas1;
     private javax.swing.JCheckBox fisioterapia1;
     private javax.swing.JCheckBox gastronomia1;
+    private javax.swing.JCheckBox geologia;
     private javax.swing.JCheckBox idiomas;
     private javax.swing.JCheckBox industrial;
     private javax.swing.JCheckBox ing_quimica;
@@ -600,9 +710,11 @@ public class Meritos extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel6;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator11;
     private javax.swing.JSeparator jSeparator12;
+    private javax.swing.JSeparator jSeparator13;
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
@@ -616,16 +728,18 @@ public class Meritos extends javax.swing.JFrame {
     private javax.swing.JLabel mensaje_12;
     private javax.swing.JLabel mensaje_13;
     private javax.swing.JLabel mensaje_14;
+    private javax.swing.JLabel mensaje_15;
     private javax.swing.JLabel mensaje_2;
     private javax.swing.JLabel mensaje_3;
     private javax.swing.JLabel mensaje_5;
     private javax.swing.JSeparator mensaje_6;
     private javax.swing.JLabel mensaje_9;
     private javax.swing.JLabel name;
-    private javax.swing.JTextField nombre1;
+    private javax.swing.JTextField nombre_usuario;
     private javax.swing.JCheckBox psicologia1;
     private javax.swing.JCheckBox psicologia_clinica;
     private javax.swing.JCheckBox psicopedadogia;
+    private javax.swing.JCheckBox telecomunicaciones1;
     private javax.swing.JCheckBox visuales;
     // End of variables declaration//GEN-END:variables
 }

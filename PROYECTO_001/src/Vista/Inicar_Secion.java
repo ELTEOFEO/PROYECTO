@@ -226,7 +226,7 @@ public class Inicar_Secion extends javax.swing.JFrame {
             System.out.println(pasword);
         temp = Processar_usuario.Validar_usuario_contraseña(user, pasword);
         if (temp) {
-            new Meritos().setVisible(true);
+           // new Meritos().setVisible(true);
         } else {
             JOptionPane.showMessageDialog(rootPane, "Usuario o contraseña incorrectos", "Error de autenticación", JOptionPane.ERROR_MESSAGE);
         }

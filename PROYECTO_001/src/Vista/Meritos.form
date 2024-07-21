@@ -34,7 +34,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel1" pref="1826" max="32767" attributes="0"/>
+              <Component id="jPanel1" pref="730" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -192,7 +192,7 @@
         <Container class="javax.swing.JScrollPane" name="jScrollPane1">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="100" width="960" height="1600"/>
+              <AbsoluteConstraints x="0" y="100" width="960" height="590"/>
             </Constraint>
           </Constraints>
 
@@ -214,7 +214,7 @@
                               <Group type="102" attributes="0">
                                   <Component id="alimentos" min="-2" pref="99" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="agropeciaria1" pref="127" max="32767" attributes="0"/>
+                                  <Component id="agropeciaria1" max="32767" attributes="0"/>
                                   <EmptySpace min="-2" pref="481" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -225,7 +225,7 @@
                                       <Component id="ambiental" alignment="0" min="-2" max="-2" attributes="0"/>
                                       <Component id="industrial" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="555" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -254,8 +254,8 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="-2" pref="173" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="NO_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="SI_BACHILLERATO3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="no_discapacidad" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="si_discapacidad" alignment="0" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
@@ -336,6 +336,10 @@
                                   </Group>
                               </Group>
                               <Component id="mensaje_2" alignment="0" min="-2" pref="280" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
@@ -370,9 +374,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="mensaje_5" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="SI_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
+                          <Component id="si_discapacidad" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="NO_BACHILLERATO3" min="-2" max="-2" attributes="0"/>
+                          <Component id="no_discapacidad" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="mensaje_6" min="-2" pref="10" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -458,7 +462,9 @@
                           <Component id="arquitectura" min="-2" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="civil" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="0" pref="169" max="32767" attributes="0"/>
+                          <EmptySpace pref="32" max="32767" attributes="0"/>
+                          <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="136" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -567,6 +573,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="SI"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SI_BACHILLERATO2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO2">
                   <Properties>
@@ -575,6 +584,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="NO"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NO_BACHILLERATO2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="mensaje_5">
                   <Properties>
@@ -584,21 +596,27 @@
                     <Property name="text" type="java.lang.String" value="Usted posee una discapacidad mayor al 35%?"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="SI_BACHILLERATO3">
+                <Component class="javax.swing.JCheckBox" name="si_discapacidad">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Franklin Gothic Heavy" size="14" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="SI"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="si_discapacidadActionPerformed"/>
+                  </Events>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="NO_BACHILLERATO3">
+                <Component class="javax.swing.JCheckBox" name="no_discapacidad">
                   <Properties>
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Franklin Gothic Heavy" size="14" style="0"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="NO"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="no_discapacidadActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JSeparator" name="mensaje_6">
                   <Properties>
@@ -630,6 +648,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Medicina"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="medicina1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="enfermeria1">
                   <Properties>
@@ -638,6 +659,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Enfermeria"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="enfermeria1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="fisioterapia1">
                   <Properties>
@@ -646,6 +670,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Fisioterapia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fisioterapia1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="dietetica1">
                   <Properties>
@@ -654,6 +681,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Nutricion y dietetica"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dietetica1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JSeparator" name="jSeparator8">
                   <Properties>
@@ -684,6 +714,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Contabilidad y auditoria"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="auditoria1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="administracion2">
                   <Properties>
@@ -692,6 +725,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Administracion de empresas"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="administracion2ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="economia1">
                   <Properties>
@@ -700,6 +736,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Economia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="economia1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="finanzas1">
                   <Properties>
@@ -708,6 +747,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Finanzas"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="finanzas1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="gastronomia1">
                   <Properties>
@@ -716,6 +758,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Gastronomia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gastronomia1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="mensaje_12">
                   <Properties>
@@ -739,6 +784,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Agropecuaria"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="agropeciaria1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="alimentos">
                   <Properties>
@@ -747,6 +795,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Alimentos"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="alimentosActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="ambiental">
                   <Properties>
@@ -755,6 +806,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Inguienieria ambiental"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ambientalActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="industrial">
                   <Properties>
@@ -763,6 +817,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Inguienieria Industrial"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="industrialActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="ing_quimica">
                   <Properties>
@@ -771,6 +828,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Inguienieria quimica"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ing_quimicaActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="biologia3">
                   <Properties>
@@ -779,6 +839,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Biologia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="biologia3ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="escenicas">
                   <Properties>
@@ -787,6 +850,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Artes escenicas"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="escenicasActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="mensaje_13">
                   <Properties>
@@ -810,6 +876,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Bioquimica y farmacia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bio_farmacia1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="visuales">
                   <Properties>
@@ -818,6 +887,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Artes visuales"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="visualesActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="idiomas">
                   <Properties>
@@ -826,6 +898,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pedadofia de los idiomas nacionales y extranjeros"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="idiomasActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="psicopedadogia">
                   <Properties>
@@ -834,6 +909,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Psicopedadogia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="psicopedadogiaActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="psicologia1">
                   <Properties>
@@ -842,6 +920,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Psicologia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="psicologia1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="psicologia_clinica">
                   <Properties>
@@ -850,6 +931,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Psicologia clinica"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="psicologia_clinicaActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="mensaje_14">
                   <Properties>
@@ -873,6 +957,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Derecho"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="derechoActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="mensaje_15">
                   <Properties>
@@ -896,6 +983,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Geologia"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="geologiaActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="computacion1">
                   <Properties>
@@ -904,6 +994,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Computacion"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="computacion1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="arquitectura">
                   <Properties>
@@ -912,6 +1005,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Arquitectura"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="arquitecturaActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="telecomunicaciones1">
                   <Properties>
@@ -920,6 +1016,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Telecomunicaciones"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="telecomunicaciones1ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JCheckBox" name="civil">
                   <Properties>
@@ -928,7 +1027,49 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Inguienieria civil"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="civilActionPerformed"/>
+                  </Events>
                 </Component>
+                <Container class="javax.swing.JPanel" name="jPanel4">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="6d" green="42" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                    </Property>
+                  </Properties>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="inscribirse" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="inscribirse" alignment="1" pref="55" max="32767" attributes="0"/>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="inscribirse">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Franklin Gothic Heavy" size="18" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="INSCRIBIRSE"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="inscribirseMousePressed"/>
+                      </Events>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
           </SubComponents>

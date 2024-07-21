@@ -2,11 +2,11 @@ package Controlador;
 
 import javax.swing.JCheckBox;
 
-public class Procesar_postulante {
+public class Procesar_opciones {
     private JCheckBox[] checkboxes;
-    String dato;
+ 
 
-    public Procesar_postulante(JCheckBox... checkboxes) {
+    public Procesar_opciones(JCheckBox... checkboxes) {
         this.checkboxes = checkboxes;
     }
 
@@ -22,6 +22,3 @@ public class Procesar_postulante {
 
 
 }
-
-
-

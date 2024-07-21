@@ -6,17 +6,25 @@ package Vista;
 
 import java.awt.Color;
 import javax.swing.JButton;
-import Controlador.Procesar_postulante;
+import Controlador.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author COSAS DE LA Y
  */
 public class Meritos extends javax.swing.JFrame {
-String bachillerato;
-String nombre_postulante;
+
+    String nombre_postulante;
+    String bachillerato;
+    String abanderado;
+    String discapacidad;
+    String carrera;
+
     /**
      * Creates new form Meritos
      */
@@ -56,8 +64,8 @@ String nombre_postulante;
         SI_BACHILLERATO2 = new javax.swing.JCheckBox();
         NO_BACHILLERATO2 = new javax.swing.JCheckBox();
         mensaje_5 = new javax.swing.JLabel();
-        SI_BACHILLERATO3 = new javax.swing.JCheckBox();
-        NO_BACHILLERATO3 = new javax.swing.JCheckBox();
+        si_discapacidad = new javax.swing.JCheckBox();
+        no_discapacidad = new javax.swing.JCheckBox();
         mensaje_6 = new javax.swing.JSeparator();
         mensaje_9 = new javax.swing.JLabel();
         mensaje_10 = new javax.swing.JLabel();
@@ -100,6 +108,8 @@ String nombre_postulante;
         arquitectura = new javax.swing.JCheckBox();
         telecomunicaciones1 = new javax.swing.JCheckBox();
         civil = new javax.swing.JCheckBox();
+        jPanel4 = new javax.swing.JPanel();
+        inscribirse = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -237,18 +247,38 @@ String nombre_postulante;
 
         SI_BACHILLERATO2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         SI_BACHILLERATO2.setText("SI");
+        SI_BACHILLERATO2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SI_BACHILLERATO2ActionPerformed(evt);
+            }
+        });
 
         NO_BACHILLERATO2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         NO_BACHILLERATO2.setText("NO");
+        NO_BACHILLERATO2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NO_BACHILLERATO2ActionPerformed(evt);
+            }
+        });
 
         mensaje_5.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
         mensaje_5.setText("Usted posee una discapacidad mayor al 35%?");
 
-        SI_BACHILLERATO3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        SI_BACHILLERATO3.setText("SI");
+        si_discapacidad.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        si_discapacidad.setText("SI");
+        si_discapacidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                si_discapacidadActionPerformed(evt);
+            }
+        });
 
-        NO_BACHILLERATO3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
-        NO_BACHILLERATO3.setText("NO");
+        no_discapacidad.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
+        no_discapacidad.setText("NO");
+        no_discapacidad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                no_discapacidadActionPerformed(evt);
+            }
+        });
 
         mensaje_6.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -260,15 +290,35 @@ String nombre_postulante;
 
         medicina1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         medicina1.setText("Medicina");
+        medicina1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                medicina1ActionPerformed(evt);
+            }
+        });
 
         enfermeria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         enfermeria1.setText("Enfermeria");
+        enfermeria1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                enfermeria1ActionPerformed(evt);
+            }
+        });
 
         fisioterapia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         fisioterapia1.setText("Fisioterapia");
+        fisioterapia1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fisioterapia1ActionPerformed(evt);
+            }
+        });
 
         dietetica1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         dietetica1.setText("Nutricion y dietetica");
+        dietetica1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                dietetica1ActionPerformed(evt);
+            }
+        });
 
         jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
 
@@ -279,18 +329,43 @@ String nombre_postulante;
 
         auditoria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         auditoria1.setText("Contabilidad y auditoria");
+        auditoria1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                auditoria1ActionPerformed(evt);
+            }
+        });
 
         administracion2.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         administracion2.setText("Administracion de empresas");
+        administracion2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                administracion2ActionPerformed(evt);
+            }
+        });
 
         economia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         economia1.setText("Economia");
+        economia1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                economia1ActionPerformed(evt);
+            }
+        });
 
         finanzas1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         finanzas1.setText("Finanzas");
+        finanzas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                finanzas1ActionPerformed(evt);
+            }
+        });
 
         gastronomia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         gastronomia1.setText("Gastronomia");
+        gastronomia1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gastronomia1ActionPerformed(evt);
+            }
+        });
 
         mensaje_12.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         mensaje_12.setText("Facultad de ciencias exactas y naturales");
@@ -299,24 +374,59 @@ String nombre_postulante;
 
         agropeciaria1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         agropeciaria1.setText("Agropecuaria");
+        agropeciaria1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                agropeciaria1ActionPerformed(evt);
+            }
+        });
 
         alimentos.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         alimentos.setText("Alimentos");
+        alimentos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                alimentosActionPerformed(evt);
+            }
+        });
 
         ambiental.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         ambiental.setText("Inguienieria ambiental");
+        ambiental.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ambientalActionPerformed(evt);
+            }
+        });
 
         industrial.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         industrial.setText("Inguienieria Industrial");
+        industrial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                industrialActionPerformed(evt);
+            }
+        });
 
         ing_quimica.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         ing_quimica.setText("Inguienieria quimica");
+        ing_quimica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ing_quimicaActionPerformed(evt);
+            }
+        });
 
         biologia3.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         biologia3.setText("Biologia");
+        biologia3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                biologia3ActionPerformed(evt);
+            }
+        });
 
         escenicas.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         escenicas.setText("Artes escenicas");
+        escenicas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                escenicasActionPerformed(evt);
+            }
+        });
 
         mensaje_13.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         mensaje_13.setText("Facultad de ciencias sociales, eduaccion y humanidades");
@@ -325,21 +435,51 @@ String nombre_postulante;
 
         bio_farmacia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         bio_farmacia1.setText("Bioquimica y farmacia");
+        bio_farmacia1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bio_farmacia1ActionPerformed(evt);
+            }
+        });
 
         visuales.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         visuales.setText("Artes visuales");
+        visuales.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                visualesActionPerformed(evt);
+            }
+        });
 
         idiomas.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         idiomas.setText("Pedadofia de los idiomas nacionales y extranjeros");
+        idiomas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                idiomasActionPerformed(evt);
+            }
+        });
 
         psicopedadogia.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         psicopedadogia.setText("Psicopedadogia");
+        psicopedadogia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                psicopedadogiaActionPerformed(evt);
+            }
+        });
 
         psicologia1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         psicologia1.setText("Psicologia");
+        psicologia1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                psicologia1ActionPerformed(evt);
+            }
+        });
 
         psicologia_clinica.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         psicologia_clinica.setText("Psicologia clinica");
+        psicologia_clinica.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                psicologia_clinicaActionPerformed(evt);
+            }
+        });
 
         mensaje_14.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         mensaje_14.setText("Ciencias juridicas y politicas");
@@ -348,6 +488,11 @@ String nombre_postulante;
 
         derecho.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         derecho.setText("Derecho");
+        derecho.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                derechoActionPerformed(evt);
+            }
+        });
 
         mensaje_15.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 14)); // NOI18N
         mensaje_15.setText("Inguienieria y arquitectura");
@@ -356,18 +501,66 @@ String nombre_postulante;
 
         geologia.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         geologia.setText("Geologia");
+        geologia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                geologiaActionPerformed(evt);
+            }
+        });
 
         computacion1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         computacion1.setText("Computacion");
+        computacion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                computacion1ActionPerformed(evt);
+            }
+        });
 
         arquitectura.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         arquitectura.setText("Arquitectura");
+        arquitectura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                arquitecturaActionPerformed(evt);
+            }
+        });
 
         telecomunicaciones1.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         telecomunicaciones1.setText("Telecomunicaciones");
+        telecomunicaciones1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                telecomunicaciones1ActionPerformed(evt);
+            }
+        });
 
         civil.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 12)); // NOI18N
         civil.setText("Inguienieria civil");
+        civil.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                civilActionPerformed(evt);
+            }
+        });
+
+        jPanel4.setBackground(new java.awt.Color(0, 66, 109));
+        jPanel4.setForeground(new java.awt.Color(255, 255, 255));
+
+        inscribirse.setFont(new java.awt.Font("Franklin Gothic Heavy", 0, 18)); // NOI18N
+        inscribirse.setForeground(new java.awt.Color(255, 255, 255));
+        inscribirse.setText("INSCRIBIRSE");
+        inscribirse.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                inscribirseMousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(inscribirse, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(inscribirse, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 55, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -379,7 +572,7 @@ String nombre_postulante;
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(alimentos, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(agropeciaria1, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                        .addComponent(agropeciaria1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(481, 481, 481))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -388,7 +581,7 @@ String nombre_postulante;
                             .addComponent(biologia3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ambiental, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(industrial, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 149, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 555, Short.MAX_VALUE))))
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -410,8 +603,8 @@ String nombre_postulante;
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(173, 173, 173)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(NO_BACHILLERATO3)
-                            .addComponent(SI_BACHILLERATO3)))
+                            .addComponent(no_discapacidad)
+                            .addComponent(si_discapacidad)))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addGap(233, 233, 233)
                         .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -473,7 +666,10 @@ String nombre_postulante;
                             .addComponent(arquitectura)
                             .addComponent(telecomunicaciones1)
                             .addComponent(civil)))
-                    .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(mensaje_2, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(72, 72, 72)
+                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -505,9 +701,9 @@ String nombre_postulante;
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(mensaje_5)
                 .addGap(18, 18, 18)
-                .addComponent(SI_BACHILLERATO3)
+                .addComponent(si_discapacidad)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(NO_BACHILLERATO3)
+                .addComponent(no_discapacidad)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(mensaje_6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
@@ -592,12 +788,14 @@ String nombre_postulante;
                 .addComponent(arquitectura)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(civil)
-                .addGap(0, 169, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(136, 136, 136))
         );
 
         jScrollPane1.setViewportView(jPanel6);
 
-        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 960, 1600));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 960, 590));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -612,7 +810,7 @@ String nombre_postulante;
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1826, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 730, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -624,67 +822,495 @@ String nombre_postulante;
             nombre_usuario.setText("");
             nombre_usuario.setForeground(Color.black);
         }
-        this.nombre_postulante= nombre_usuario.getText();
-        System.out.println(nombre_postulante);
+    
     }//GEN-LAST:event_nombre_usuarioMousePressed
 
     private void B_G_U2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_G_U2ActionPerformed
-        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(B_G_U2, B_C2, B_T2, B_C_A1);
         B_G_U2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                checkboxManager.preparar_opciones(B_G_U2);
+                manejarcheckbox.preparar_opciones(B_G_U2);
             }
         });
 
-        checkboxManager.preparar_opciones(B_G_U2);
+        manejarcheckbox.preparar_opciones(B_G_U2);
         bachillerato = B_G_U2.getText();
         System.out.println(bachillerato);
     }//GEN-LAST:event_B_G_U2ActionPerformed
 
     private void B_C2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_C2ActionPerformed
-        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(B_G_U2, B_C2, B_T2, B_C_A1);
         B_C2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                checkboxManager.preparar_opciones(B_C2);
+                manejarcheckbox.preparar_opciones(B_C2);
             }
         });
 
-        checkboxManager.preparar_opciones(B_C2);
-         bachillerato = B_C2.getText();
-       System.out.println(bachillerato);
-         
+        manejarcheckbox.preparar_opciones(B_C2);
+        bachillerato = B_C2.getText();
+        System.out.println(bachillerato);
+
     }//GEN-LAST:event_B_C2ActionPerformed
 
     private void B_T2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_T2ActionPerformed
-        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(B_G_U2, B_C2, B_T2, B_C_A1);
         B_T2.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                checkboxManager.preparar_opciones(B_T2);
+                manejarcheckbox.preparar_opciones(B_T2);
             }
         });
 
-        checkboxManager.preparar_opciones(B_T2);
+        manejarcheckbox.preparar_opciones(B_T2);
         bachillerato = B_T2.getText();
         System.out.println(bachillerato);
 
     }//GEN-LAST:event_B_T2ActionPerformed
 
     private void B_C_A1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_B_C_A1ActionPerformed
-        Procesar_postulante checkboxManager = new Procesar_postulante(B_G_U2, B_C2, B_T2, B_C_A1);
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(B_G_U2, B_C2, B_T2, B_C_A1);
         B_C_A1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                checkboxManager.preparar_opciones(B_C_A1);
+                manejarcheckbox.preparar_opciones(B_C_A1);
             }
         });
 
-        checkboxManager.preparar_opciones(B_C_A1);
+        manejarcheckbox.preparar_opciones(B_C_A1);
         bachillerato = B_C_A1.getText();
         System.out.println(bachillerato);
     }//GEN-LAST:event_B_C_A1ActionPerformed
+
+    private void SI_BACHILLERATO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SI_BACHILLERATO2ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(SI_BACHILLERATO2, NO_BACHILLERATO2);
+        SI_BACHILLERATO2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(SI_BACHILLERATO2);
+            }
+        });
+        manejarcheckbox.preparar_opciones(SI_BACHILLERATO2);
+        this.abanderado = SI_BACHILLERATO2.getText();
+        System.out.println(abanderado);
+    }//GEN-LAST:event_SI_BACHILLERATO2ActionPerformed
+
+    private void NO_BACHILLERATO2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NO_BACHILLERATO2ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(SI_BACHILLERATO2, NO_BACHILLERATO2);
+        NO_BACHILLERATO2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(NO_BACHILLERATO2);
+            }
+        });
+        manejarcheckbox.preparar_opciones(NO_BACHILLERATO2);
+        this.abanderado = NO_BACHILLERATO2.getText();
+        System.out.println(abanderado);
+    }//GEN-LAST:event_NO_BACHILLERATO2ActionPerformed
+
+    private void si_discapacidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_si_discapacidadActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(si_discapacidad, no_discapacidad);
+        si_discapacidad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(si_discapacidad);
+            }
+        });
+        manejarcheckbox.preparar_opciones(si_discapacidad);
+        this.discapacidad = si_discapacidad.getText();
+        System.out.println(discapacidad);
+    }//GEN-LAST:event_si_discapacidadActionPerformed
+
+    private void no_discapacidadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_no_discapacidadActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(si_discapacidad, no_discapacidad);
+        no_discapacidad.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(no_discapacidad);
+            }
+        });
+        manejarcheckbox.preparar_opciones(no_discapacidad);
+        this.discapacidad = no_discapacidad.getText();
+        System.out.println(discapacidad);
+    }//GEN-LAST:event_no_discapacidadActionPerformed
+
+    private void medicina1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_medicina1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        medicina1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(medicina1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(medicina1);
+        this.carrera = medicina1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_medicina1ActionPerformed
+
+    private void enfermeria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_enfermeria1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        enfermeria1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(enfermeria1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(enfermeria1);
+        this.carrera = enfermeria1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_enfermeria1ActionPerformed
+
+    private void fisioterapia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fisioterapia1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        fisioterapia1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(fisioterapia1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(fisioterapia1);
+        this.carrera = fisioterapia1.getText();
+        System.out.println(carrera);    }//GEN-LAST:event_fisioterapia1ActionPerformed
+
+    private void dietetica1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dietetica1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        dietetica1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(dietetica1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(dietetica1);
+        this.carrera = dietetica1.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_dietetica1ActionPerformed
+
+    private void administracion2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_administracion2ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        administracion2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(administracion2);
+            }
+        });
+        manejarcheckbox.preparar_opciones(administracion2);
+        this.carrera = administracion2.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_administracion2ActionPerformed
+
+    private void auditoria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_auditoria1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        auditoria1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(auditoria1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(auditoria1);
+        this.carrera = auditoria1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_auditoria1ActionPerformed
+
+    private void economia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_economia1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        economia1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(economia1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(economia1);
+        this.carrera = economia1.getText();
+        System.out.println(carrera);    }//GEN-LAST:event_economia1ActionPerformed
+
+    private void finanzas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_finanzas1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        finanzas1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(finanzas1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(finanzas1);
+        this.carrera = finanzas1.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_finanzas1ActionPerformed
+
+    private void gastronomia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gastronomia1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        gastronomia1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(gastronomia1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(gastronomia1);
+        this.carrera = gastronomia1.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_gastronomia1ActionPerformed
+
+    private void alimentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_alimentosActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        alimentos.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(alimentos);
+            }
+        });
+        manejarcheckbox.preparar_opciones(alimentos);
+        this.carrera = alimentos.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_alimentosActionPerformed
+
+    private void biologia3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_biologia3ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        biologia3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(biologia3);
+            }
+        });
+        manejarcheckbox.preparar_opciones(biologia3);
+        this.carrera = biologia3.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_biologia3ActionPerformed
+
+    private void ambientalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ambientalActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        ambiental.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(ambiental);
+            }
+        });
+        manejarcheckbox.preparar_opciones(ambiental);
+        this.carrera = ambiental.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_ambientalActionPerformed
+
+    private void industrialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_industrialActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        industrial.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(industrial);
+            }
+        });
+        manejarcheckbox.preparar_opciones(industrial);
+        this.carrera = industrial.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_industrialActionPerformed
+
+    private void ing_quimicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ing_quimicaActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        ing_quimica.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(ing_quimica);
+            }
+        });
+        manejarcheckbox.preparar_opciones(ing_quimica);
+        this.carrera = ing_quimica.getText();
+        System.out.println(carrera);    }//GEN-LAST:event_ing_quimicaActionPerformed
+
+    private void bio_farmacia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bio_farmacia1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        bio_farmacia1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(bio_farmacia1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(bio_farmacia1);
+        this.carrera = bio_farmacia1.getText();
+        System.out.println(carrera);     }//GEN-LAST:event_bio_farmacia1ActionPerformed
+
+    private void agropeciaria1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_agropeciaria1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        agropeciaria1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(agropeciaria1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(agropeciaria1);
+        this.carrera = agropeciaria1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_agropeciaria1ActionPerformed
+
+    private void escenicasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_escenicasActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        escenicas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(escenicas);
+            }
+        });
+        manejarcheckbox.preparar_opciones(escenicas);
+        this.carrera = escenicas.getText();
+        System.out.println(carrera);   // TODO add your handling code here:
+    }//GEN-LAST:event_escenicasActionPerformed
+
+    private void visualesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_visualesActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        visuales.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(visuales);
+            }
+        });
+        manejarcheckbox.preparar_opciones(visuales);
+        this.carrera = visuales.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_visualesActionPerformed
+
+    private void idiomasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idiomasActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        idiomas.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(idiomas);
+            }
+        });
+        manejarcheckbox.preparar_opciones(idiomas);
+        this.carrera = idiomas.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_idiomasActionPerformed
+
+    private void psicologia1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psicologia1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        psicologia1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(psicologia1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(psicologia1);
+        this.carrera = psicologia1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_psicologia1ActionPerformed
+
+    private void psicopedadogiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psicopedadogiaActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        psicopedadogia.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(psicopedadogia);
+            }
+        });
+        manejarcheckbox.preparar_opciones(psicopedadogia);
+        this.carrera = psicopedadogia.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_psicopedadogiaActionPerformed
+
+    private void psicologia_clinicaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_psicologia_clinicaActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        psicologia_clinica.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(psicologia_clinica);
+            }
+        });
+        manejarcheckbox.preparar_opciones(psicologia_clinica);
+        this.carrera = psicologia_clinica.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_psicologia_clinicaActionPerformed
+
+    private void derechoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_derechoActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        derecho.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(derecho);
+            }
+        });
+        manejarcheckbox.preparar_opciones(derecho);
+        this.carrera = derecho.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_derechoActionPerformed
+
+    private void computacion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_computacion1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        computacion1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(computacion1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(computacion1);
+        this.carrera = computacion1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_computacion1ActionPerformed
+
+    private void geologiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_geologiaActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        geologia.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(geologia);
+            }
+        });
+        manejarcheckbox.preparar_opciones(geologia);
+        this.carrera = geologia.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_geologiaActionPerformed
+
+    private void telecomunicaciones1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_telecomunicaciones1ActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        telecomunicaciones1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(telecomunicaciones1);
+            }
+        });
+        manejarcheckbox.preparar_opciones(telecomunicaciones1);
+        this.carrera = telecomunicaciones1.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_telecomunicaciones1ActionPerformed
+
+    private void arquitecturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_arquitecturaActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        arquitectura.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(arquitectura);
+            }
+        });
+        manejarcheckbox.preparar_opciones(arquitectura);
+        this.carrera = arquitectura.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_arquitecturaActionPerformed
+
+    private void civilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_civilActionPerformed
+        Procesar_opciones manejarcheckbox = new Procesar_opciones(medicina1, enfermeria1, fisioterapia1, dietetica1, administracion2, auditoria1, economia1, finanzas1, gastronomia1, alimentos, biologia3, ambiental, industrial, ing_quimica, bio_farmacia1, agropeciaria1, escenicas, visuales, idiomas, psicologia1, psicopedadogia, psicologia_clinica, derecho, computacion1, geologia, telecomunicaciones1, arquitectura, civil);
+        civil.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                manejarcheckbox.preparar_opciones(civil);
+            }
+        });
+        manejarcheckbox.preparar_opciones(civil);
+        this.carrera = civil.getText();
+        System.out.println(carrera);
+    }//GEN-LAST:event_civilActionPerformed
+
+    private void inscribirseMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inscribirseMousePressed
+     nombre_postulante = nombre_usuario.getText();
+      
+        LocalDate fechaActual = LocalDate.now();
+
+
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        String fecha= fechaActual.format(formato);
+         Guardar_postulante postulante = new Guardar_postulante(nombre_postulante, fecha, bachillerato, abanderado, discapacidad, carrera);
+        
+        String usuario;
+        String contraseña;
+
+        Gestion_usuarios gestionUsuarios = new Gestion_usuarios();
+        usuario = gestionUsuarios.creador_usuarios();
+
+        Gestion_contraseñas gestionContraseñas = new Gestion_contraseñas();
+        contraseña = gestionContraseñas.creador_contraseñas();
+        JOptionPane.showMessageDialog(this, "Usuario: " + usuario + "\nContraseña: " + contraseña, "Guarde la suiguiente información", JOptionPane.INFORMATION_MESSAGE);
+        new Inicar_Secion().setVisible(true);
+    }//GEN-LAST:event_inscribirseMousePressed
 
     /**
      * @param args the command line arguments
@@ -727,9 +1353,7 @@ String nombre_postulante;
     private javax.swing.JCheckBox B_G_U2;
     private javax.swing.JCheckBox B_T2;
     private javax.swing.JCheckBox NO_BACHILLERATO2;
-    private javax.swing.JCheckBox NO_BACHILLERATO3;
     private javax.swing.JCheckBox SI_BACHILLERATO2;
-    private javax.swing.JCheckBox SI_BACHILLERATO3;
     private javax.swing.JCheckBox administracion2;
     private javax.swing.JCheckBox agropeciaria1;
     private javax.swing.JCheckBox alimentos;
@@ -752,11 +1376,13 @@ String nombre_postulante;
     private javax.swing.JCheckBox idiomas;
     private javax.swing.JCheckBox industrial;
     private javax.swing.JCheckBox ing_quimica;
+    private javax.swing.JLabel inscribirse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator10;
@@ -783,10 +1409,12 @@ String nombre_postulante;
     private javax.swing.JSeparator mensaje_6;
     private javax.swing.JLabel mensaje_9;
     private javax.swing.JLabel name;
+    private javax.swing.JCheckBox no_discapacidad;
     private javax.swing.JTextField nombre_usuario;
     private javax.swing.JCheckBox psicologia1;
     private javax.swing.JCheckBox psicologia_clinica;
     private javax.swing.JCheckBox psicopedadogia;
+    private javax.swing.JCheckBox si_discapacidad;
     private javax.swing.JCheckBox telecomunicaciones1;
     private javax.swing.JCheckBox visuales;
     // End of variables declaration//GEN-END:variables

@@ -1308,7 +1308,7 @@ public class Meritos extends javax.swing.JFrame {
 
         Gestion_contraseñas gestionContraseñas = new Gestion_contraseñas();
         contraseña = gestionContraseñas.creador_contraseñas();
-        Guardar_postulante postulante = new Guardar_postulante(nombre_postulante, fecha, bachillerato, abanderado, discapacidad, carrera, usuario,contraseña);
+        Guardar_postulante postulante = new Guardar_postulante(nombre_postulante, fecha, bachillerato, abanderado, discapacidad, carrera, usuario,contraseña,"");
         JOptionPane.showMessageDialog(this, "Usuario: " + usuario + "\nContraseña: " + contraseña, "Guarde la suiguiente información", JOptionPane.INFORMATION_MESSAGE);
         new Inicar_Secion().setVisible(true);
     }//GEN-LAST:event_inscribirseMousePressed

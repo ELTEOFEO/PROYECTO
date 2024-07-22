@@ -10,9 +10,9 @@ public class Postulante {
     protected String carrera;
     protected String usuario;
     protected String contraseña;
-    protected String estado;
+    protected boolean estado;
 
-    public Postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera, String usuario, String contraseña, String estado) {
+    public Postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera, String usuario, String contraseña, boolean estado) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.bachillerato = bachillerato;

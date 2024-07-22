@@ -8,8 +8,10 @@ public class Postulante {
     protected String abanderado;
     protected String discapacidad;
     protected String carrera;
+    protected String usuario;
+    protected String contraseña;
 
-    public Postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera) {
+    public Postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera, String usuario, String contraseña) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.bachillerato = bachillerato;

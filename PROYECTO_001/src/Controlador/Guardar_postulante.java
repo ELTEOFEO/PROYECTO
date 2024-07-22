@@ -6,11 +6,9 @@ package Controlador;
 
 public class Guardar_postulante extends Postulante {
 
-    // Constructor
-    public Guardar_postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera) {
-        super(nombre, fecha, bachillerato, abanderado, discapacidad, carrera);
+    public Guardar_postulante(String nombre, String fecha, String bachillerato, String abanderado, String discapacidad, String carrera, String usuario, String contraseña) {
+        super(nombre, fecha, bachillerato, abanderado, discapacidad, carrera, usuario, contraseña);
     }
-    
-    // Puedes agregar métodos adicionales o modificar la funcionalidad aquí
+
 }
 
